@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="mainHeading">JavaScript</h1>
+      <h1>Q : What is JavaScript ?</h1>
+      <p>
+        ANS: JavaScript is the world's most popular programming language.
+        JavaScript is the programming language of the Web.
+      </p>
+      <h1>Q : Where JavaScript script place ?</h1>
+      <p>
+        ANS: JavaScript script can place in body or in head , but its best place
+        is bottom of body . Placing script in body element it improve the
+        display speed . because script interpretation slow down the display.
+      </p>
+      <h1>Q :What is JavaScript Statements ?</h1>
+      <p>
+        ANS: A Computer Programer is list of instruction to be executed by
+        Computer. In programming language these instruction called Statements.
+      </p>
+      <h1>Q :What is JavaScript Programer ?</h1>
+      <p>
+        ANS: A JavaScript Programer is s list of Statements. In HTML, JavaScript
+        programs are executed by the web browser.
+      </p>
+      <h1>Q :What is JavaScript Code ?</h1>
+      <p>
+        ANS: JavaScript programs (and JavaScript statements) are often called
+        JavaScript code.
+      </p>
+      <h1>Q :What is concatenation ?</h1>
+      <p>
+        ANS: when one value in number and second value is sting than + operator
+        concat both values. let x = 5+"10" x=510.If you put a number in quotes,
+        the rest of the numbers will be treated as strings, and concatenated.
+      </p>
+      <h1>Q :What is Data type ? primitive and non primitive data type</h1>
+      <p>
+        ANS: <b>Data Type :</b> Data type determine the type of value that can
+        be stored in variable. <b>Primitive Data Type </b>: Primitive data type
+        are the immutable which means their value cannot be changed or modified
+        once there are created. And Holding only one value.(Number ,
+        String,null,boolean,) <b>Primitive Data Type </b>: Non Data type can
+        hold multiple values or methods. They are th mutable their value can
+        change. (Object,Arrays,function,date)
+      </p>
+      <h1>Q : What is JavaScript Function ? and Type of function .</h1>
+      <p>
+        ANS: JavaScript Function is a block of code . that can be executed when
+        "called" for. For Example : A function is called when a event is occur
+        like click on a button .<br />
+        <b>Type</b> :<br />
+        <b> Named Function :</b><br />
+        Simple Function is are named function <br />
+        <b>Anonymous Function : </b><br />
+        In JavaScript, an anonymous function is that type of function that has
+        no name or we can say which is without any name. When we create an
+        anonymous function, it is declared without any identifier<br />
+        <b> Function Expression :</b> <br />A function Expression is way to
+        assign a function to a variable. we can assign an anonymous function to
+        an variable also named function to variable but mostly used anonymous
+        function to variable <br /><b> Arrow Function :</b> <br />
+        Arrow functions allows a short syntax for writing function expressions.
+        You don't need the function keyword, the return keyword, and the curly
+        brackets.<br /><b> IIFE</b> :
+        <br />----------------------------------------------<br /><b
+          >Callback Function :</b
+        >
+        <br />A callback function is a function which pass to function as
+        argument to another function.<br />
+        <b>Higher-Order Function :</b><br />
+        Take one or more function as argument or Return a function. <br />
+      </p>
+
+      <h1>Q : What is Event Loop ?</h1>
+      <p>
+        ANS: Event loop ek core concept hai in JavaScript aur web browsers mein,
+        jo asynchronous tasks ko handle karne ke liye use hota hai. JavaScript
+        single-threaded hai, iska matlab hai ki ek waqt mein ek hi kaam kar
+        sakta hai. Lekin jab asynchronous tasks aate hain, jaise ke I/O
+        operations (file read/write), network requests, ya timers (setTimeout),
+        to event loop ensure karta hai ke JavaScript apna main kaam khatam karne
+        ke baad asynchronous tasks ko handle kare.
+        <br />
+        <b>Call Stack :</b> Yeh wo jagah hai jahan JavaScript ke synchronous
+        functions ko ek ke baad ek execute kiya jata hai<br />
+        <b>Task Quee:</b> Jab asynchronous operations complete hote hain, unke
+        callbacks ko task queue mein daal diya jata hai. Lekin yeh tab tak
+        execute nahi hote jab tak call stack empty na ho.<br />
+        <b>Event Loop :</b> Event loop continuously check karta hai agar call
+        stack empty hai ya nahi. Jab call stack empty ho jata hai, event loop
+        task queue se pehle callback ko utha ke call stack mein daal deta hai
+        taake wo execute ho sake.<br />
+        <b>Conclusion:</b><br />
+        Event loop asynchronous tasks ko efficiently handle karta hai bina
+        JavaScript ka synchronous execution block kiye.
+      </p>
+      <h1>Q : What is hoisting ?</h1>
+      <p>
+        ANS: Hoisting is a mechanism in JavaScript that moves variable
+        declarations to the top of their scope, whether it's a function or a
+        block. but the value will be undefined until the declaration is reached.
+        <br />
+        let and const: These variables are also hoisted, but they create a
+        temporal dead zone (TDZ) until they're declared. Accessing them before
+        the declaration results in a ReferenceError.
+      </p>
+      <h1>Q : What is asynchronous operation ?</h1>
+      <p>
+        ANS: asynchronous operation did not block execution code code .
+        console.log("First Hello"); setTimeout(() => { console.log("Middle
+        Hello"); }, 2000); console.log("Last Hello"); . Asynchronous operations
+        wo tasks hote hain jo background mein execute hote hain bina JavaScript
+        ke main thread ko block kiye. In operations ka main fayda ye hai ke yeh
+        kaam complete hone tak JavaScript ke synchronous code ko rukne nahi
+        dete. Jab asynchronous task complete hota hai, tab iska result ya
+        callback handle kiya jata hai, jo event loop ke zariye main thread pe
+        wapas aata hai.
+      </p>
+      <h1>Q : when to use callback function?</h1>
+      <p>
+        ANS: callback function are used for Higher Order iterate , Event Handling
+        ,asynchronous operation ,  Function and Promises. Callback
+        is a function passed to an function as an argument
+      </p>
+      <h1>Q : What is JavaScript Arrays ?</h1>
+      <p>ANS: JavaScript Arrays are used to store the collection values .</p>
+      <h1>Q : What is JavaScript Local Scope and Global Scope ?</h1>
+      <p>
+        ANS: Local Scope : Variables declared inside the function have local
+        scope .which means it can access only inside the functions. Global Scope
+        : Variables declared outside any function have Global scope which mean
+        they can accessed from anywhere within a program.
+      </p>
+      <h1>Q : What is difference between var , const and let ?</h1>
+      <p>
+        ANS:In JavaScript, var, let, and const are used to declare variables,
+        but they have different behaviors regarding scope, hoisting, and
+        mutability. <br />
+        <b> var : </b> <br />
+        <b>Scope: </b> Function-scoped or globally-scoped. Variables declared
+        with var are accessible throughout the entire function or globally if
+        declared outside a function.<br />
+        <b> Hoisting:</b> var is hoisted, meaning the declaration is moved to
+        the top of its scope, but not the initialization. So, you can reference
+        a var variable before its actual line of declaration, though it will be
+        undefined until it's initialized. <br /><b>Redeclaration:</b> Variables
+        declared with var can be redeclared in the same scope without an
+        error.<br />
+        <b>Let :<br /></b> <b>Scope: </b> <b>Block-scoped</b> Variables declared
+        with let are only accessible within the block (e.g., within {}) they are
+        defined. <br />
+        <b> Hoisting:</b> let is hoisted but cannot be used before declaration
+        (throws a ReferenceError if accessed before initialization due to
+        "temporal dead zone"). <br />
+        <b> Redeclaration: </b>let cannot be redeclared within the same scope,
+        but it can be updated.<br />
+        <b>Const :</b><br />
+        <b> Scope:</b> Block-scoped like let. The variable is only accessible
+        within the block where it is defined.<br />
+        <b> Hoisting:</b> const is also hoisted but cannot be accessed before
+        declaration due to the "temporal dead zone."<br />
+        <b> Mutability: </b>Variables declared with const cannot be reassigned
+        after their initial assignment, though if the variable holds an object
+        or array, the contents of the object or array can be modified. <br /><b>
+          Redeclaration:</b
+        >
+      </p>
+
+      <h1>Q:What is Promise? why we use it?</h1>
+      <p>
+        ANS: "Producing code" is code that can take some time "Consuming code"
+        is code that must wait for the result. A Promise is an Object that links
+        Producing code and Consuming code . Promise can be one of three Pending,
+        Resolved,or Rejected.
+        <br />
+        Promise JavaScript mein ek object hota hai jo asynchronous operations ko
+        handle karne ke liye use hota hai. Iska purpose future mein resolve hone
+        wale values ko manage karna hota hai, chaahe wo successfully resolve ho
+        (fulfilled) ya fail ho (rejected). Isme aap future mein kisi event ke
+        complete hone par action define kar sakte hain.<br />
+        <b>Why</b>
+        <br />
+        JavaScript asynchronous operations ko handle karne ke liye traditionally
+        callbacks ka use karta tha. Lekin callback hell aur complex nested
+        callbacks ko avoid karne ke liye Promises ko introduce kiya gaya.
+      </p>
+      <h1>Q:what is async and await ?</h1>
+      <p>
+        ANS: async and await make promises easier to write" async makes a
+        function return a Promise await makes a function wait for a Promise The
+        await keyword can only be used inside an async function. The await
+        keyword makes the function pause the execution and wait for a resolved
+        promise before it continues:
+      </p>
+      <h1>Q:what is Call back hell ?</h1>
+      <p>
+        ANS: Callback Hell tab hota hai jab deeply nested callbacks asynchronous
+        tasks ko perform karne ke liye use kiye jate hain, jo code ko difficult
+        aur unreadable banata hai. Promises aur async/await ka use karke aap
+        nested callbacks ko avoid kar sakte hain aur asynchronous code ko more
+        readable aur maintainable bana sakte hain.
+      </p>
+
+      <h1>Q :What is loop ?</h1>
+      <p>
+        ANS: loop is a program way to run a set of code repeatedly until a
+        certain condition is met .
+      </p>
+      <h1>Q:What is javascript loops</h1>
+      <p>
+        ANS: <b>for</b> : loops through a block of code number of times. For
+        loop allows to iterate a block of code a specified number of times<br />
+        <b>for/in</b> : loops through the properties of an object.<br />
+        <b>for/of</b> : loops through the value of an iterable object.<br />
+        <b>while loop</b> : loops through the block of code while specified
+        condition. while loop execute a block of code a certain condition is
+        true true.<br />
+        <b>do/while loop</b> : also loops through the block of code while
+        specified condition true. expect that block of code is at least once
+        even if condition is false.f<br />
+      </p>
+      <h1>Q:What is Set Time out and set interval and set time zero ?</h1>
+      <p>
+        <b>SET TIME OUT :</b> Set time out is used when we want to excaute
+        function or something else after some time .<br />
+        <b>SET Interval :</b> Set interval is used when we want to excaute some
+        javascript repeatedly after the set period of time .<br />
+        for (var i = 0; i 3; i++) { setTimeout(function () { console.log(i); },
+        3000); }
+      </p>
+      <h1>Q:What is Closure ?</h1>
+      <p>
+        A closure is the combination of a function s together (enclosed) with
+        references to its surrounding state (the lexical environment). In other
+        words, a closure gives a function access to its outer scope. In
+        JavaScript, closures are created every time a function is created, at
+        function creation time. (Closure ek Function huta hy us along its
+        surrounding state ) Example ( function a (){ x= "abdul" function
+        displayName(){ console.log(x) } displayName() } a() ) is case may ek
+        full function return hogya us ky lexical ky sath
+      </p>
+      <h1>Difference between FrameWork and library</h1>
+      <p>
+        <b>FrameWork :</b>The framework controls when to call your code. Less
+        flexible. The framework provides a predefined structure and expects your
+        code to fit within that structure.A complete solution that includes
+        multiple tools to build the entire application.<br />
+        <b>library :</b> You call the library when you need it. More flexible.
+        You choose the structure of your app and when to use the library.
+        Typically focused on one task <br />
+      </p>
+      <h1>Q: what is For..Each Loop?</h1>
+      <p>
+        ANS : For..Each Loop is a loop available on an array or object that
+        allows you to iterate over each element of the array and perform some
+        action on each element.
+      </p>
+      <h1>Q: what is reduce?</h1>
+      <p>
+        ANS : reduce() ek powerful function hai jo array ke elements ko process
+        karke ek single value return karta hai. Iska use har tarah ke
+        aggregation tasks ke liye ho sakta hai, jaise summing, multiplying,
+        flattening arrays, counting occurrences, finding maximum/minimum, and
+        many more.
+      </p>
+      <h1>Q: what is map(),filter() and Find()</h1>
+      <p>
+        ANS : <b>map()</b> ek powerful function hai jo har element ko process
+        karke ek naya transformed array banata hai. Yeh array ke elements par
+        koi bhi computation ya transformation apply karne ke liye use hota hai,
+        aur naya array bina original array ko modify kiye return karta hai.<br />
+        <b>filter:</b> ek array method hai jo array ke elements ko filter karta
+        hai based on a given condition and returns a new array of all elements
+        that satisfy the condition. Agar koi bhi element condition meet nahi
+        karta, toh empty array return karta hai.<br />
+        <b>find():</b>
+        find() ek array method hai jo array ke elements mein se pehla element
+        return karta hai jo condition meet karta hai. Agar koi bhi element
+        condition match nahi karta, toh undefined return karta hai
+      </p>
+      <h1>Q: what is Shallow Copy and Deep Copy?</h1>
+      <p>
+        ANS: <b>Shallow Copy:</b> Shallow copy ka matlab hai ke object ya array
+        ki top-level properties ko copy kiya jata hai. Agar object ya array ke
+        andar nested objects ya arrays hon, toh shallow copy unki references ko
+        copy karti hai, na ke unka actual data. Iska matlab agar aap shallow
+        copy ka use karke ek nested object ko modify karte hain, toh original
+        object ka nested data bhi change ho jata hai kyunki dono same reference
+        share karte hain.<br />
+        <b>Shallow Copy Methods:</b> <br />Object.assign(): Yeh shallow copy
+        banata hai.<br />
+        Spread operator (...): Yeh bhi shallow copy banata hai.
+        <br />
+        ANS: <b>Deep Copy:</b> Deep copy ka matlab hai ke object ya array ki har
+        level ka data copy kiya jata hai, including nested objects and arrays.
+        Deep copy mein ek completely independent copy banti hai, jisme koi bhi
+        reference share nahi hota. Agar deep copy ko modify karte hain, toh
+        original object/array bilkul unaffected rehta hai.
+        <br />
+        <b>Deep Copy Methods:</b> JSON.parse(JSON.stringify()): Yeh ek common
+        method hai deep copy banane ka. Lekin yeh method functions ya undefined
+        values ko handle nahi karta.
+      </p>
+
+      <h1 id="mainHeading">React</h1>
+      <h1>Q : what is React ?</h1>
+      <p>
+        ANS: React is a JavaScript library for building User interfaces . React
+        is use to build single page application . it allows us create reusable
+        components . it is created by Facebook
+      </p>
+      <h1>Q : How does it work (React)?</h1>
+      <p>
+        ANS:React Create a Virtual DOM in memory. Instead of make change in
+        browser DOM Directly it create virtual DOM in memory it does all
+        necessary changes in it before make changes in browser DOM. React only
+        Change what is Need to Change.
+      </p>
+      <h1>Q : What is Es6</h1>
+      <p>
+        ANS:Es6 is ECMAScript 6. ECMAScript 6 is use to standardize the
+        JavaScript . Es6 is the 6th version of ECMAScript
+      </p>
+      <h1>
+        Q : difference Between state and Props in React ? and it context how to
+        give pops t other components
+      </h1>
+      <p>
+        ANS:State: Managed internally by a component, used to store and update
+        data within the component itself. Props: Passed down from parent
+        components to child components, used to provide data to child
+        components.
+      </p>
+      <h1>
+        Q : when we write npx create-react-app my-app what it actually do?
+      </h1>
+      <p>
+        ANS: when run command npx create-react-app it create a react project in
+        directory in this project react give us and folder basic structure ,
+        file and dependencies
+      </p>
+      <h1>Q :What is functional components and class base components?</h1>
+      <p>
+        ANS: Components are Like Function that return Html Elements. Class base
+        Components Class components in React are reusable JavaScript classes
+        that define UI elements. They use state and lifecycle methods to manage
+        component data and behavior, offering more control over complex
+        applications compared to functional components. Function Component
+        Function components are JavaScript Functions that return JSX. It is
+        easier to use and recommended way to make functional components
+        ------------- Difference ----------- Functional components are defined
+        as JavaScript functions and return JSX. They use hooks for state
+        management and side effects. Class components are defined using ES6
+        classes and have a this context. They use lifecycle methods for state
+        management and side effects.
+      </p>
+      <h1>Q : What is JSX</h1>
+      <p>
+        ANS: JSX is JavaScript XML . It allows us to right HTML in React . it
+        make easier to write and add html in react.
+      </p>
+      <h1>
+        Q : what are hook? detail Use State Use Effect Use Context Use Reducer
+        Use Memo Use Call Back Use Ref
+      </h1>
+      <p>
+        ANS: Hooks are allow function Components to have access on state and
+        other features. Use State Use state hook is allow us to mange state in
+        components. Use Effect useEffect Hook in React is used to perform side
+        effects in functional components. It allows you to do things that don't
+        belong in the rendering phase, like fetching data, setting up
+        subscriptions, or manipulating the DOM directly.
+      </p>
+      <h1>
+        Q : what did do Use Effect dependencies array do if it have value or not
+        ?
+      </h1>
+      <p>
+        ANS:The useEffect hook in React runs side effects in function
+        components.<br />
+        <b>No Dependencies Array:</b> If you don't pass a second argument (i.e.,
+        no dependencies array), the effect will run after every render (on both
+        mount and update).
+        <br />
+        <b>Empty Dependencies Array []: </b>If you pass an empty array, the
+        effect will run only once, after the initial render (i.e., when the
+        component mounts). It won't run again unless the component unmounts (in
+        which case the cleanup function will run, if provided).<br />
+        <b> Dependencies Array with Values [dep1, dep2, ...]:</b> When you pass
+        an array of dependencies, the effect will run only when any of the
+        dependencies change. React compares the current values of the
+        dependencies with their previous values. If any value has changed, the
+        effect will re-run.<br />
+        Summary of Execution: No array: runs on every render. Empty array: runs
+        once on mount. Array with values: runs when a dependency value changes.
+      </p>
+      <h1>
+        Q : What are Higher Order Component ? why we use it ? when we use it ?
+        machine code ground?
+      </h1>
+      <p>
+        ANS: A Higher order component is a function which is accept a component
+        as an argument
+      </p>
+      <h1>
+        Q : Life Cycle Method of components ? Mounting ,Updating Unmounting
+      </h1>
+      <p>
+        ANS: The Life Cycle Method of components in React refers to the sequence
+        of stages or phases that a React component goes through from its
+        creation to its eventual removal or replacement. Mounting Phase
+        (Component Creation): This phase occurs when a component is created and
+        inserted into the DOM for the first time. Updating Phase (Component
+        Re-rendering): This phase occurs when a components props or state
+        change. Unmounting Phase (Component Removal): This phase occurs when a
+        component is removed from the DOM.
+      </p>
+      <h1>Q: what is Higher order Component?</h1>
+      <p>
+        ANS: HOC ek aisa function hota hai jo ek component ko input leta hai aur ek naya component return karta hai, jo additional functionality ya behavior add karta haif
+      </p>
+      <h1>Q: what is Class based Lifecycle methods?</h1>
+      <p>
+        ANS: In React, class-based lifecycle methods wo special methods hote
+        hain jo React components ke lifecycle ke different stages ko handle
+        karte hain. A lifecycle ke different phases hote hain: mounting,
+        updating, and unmounting, aur lifecycle methods ko use karke aap in
+        different stages mein component ke behavior ko customize kar sakte hain.
+        React mein, agar aap class components use kar rahe hain, toh lifecycle
+        methods ka istemal kar ke component ki initialization, rendering,
+        updating, aur cleanup ko control karte hain.<br />
+        <b>Lifecycle Methods Phases: </b><br />
+        Mounting: Jab component DOM mein appear hota hai (first render).<br />
+        Updating: Jab component ko update kiya jata hai due to state or prop<br />
+        changes. Unmounting: Jab component DOM se remove kiya jata hai.<br />
+      </p>
+      
+      <h1>Q : redux who it work why we need it what it is ?</h1>
+      <p>
+        ANS:Redux is a state management library for JavaScript applications,
+        often used with React. It helps manage and centralize the application's
+        global state in a predictable way. In a typical React application, state
+        is usually managed locally within components. However, as an application
+        grows, managing state across multiple components becomes more complex.
+        Redux simplifies this by providing a single source of truth for the
+        entire application state and a way to manage it predictably.
+      </p>
+      <h1>Q : Custom hooks ? when ? why ? code</h1>
+      <p>ANS:</p>
+      <h1>Q : Lazy loading ?</h1>
+      <p>ANS:</p>
+      <h1>Questions</h1>
+      <p>
+        Understand role-based access control and routing in React 17- Handling
+        protected and unprotected routes during interviews. 18- Understanding
+        unit testing and asynchronous tasks is crucial for React interviews.
+        what is react test ? asynchronous tasks ? 19- Understanding and
+        implementing crucial concepts in React 20- Importance of code
+        readability, modularity, reusability, and testability in interviews. 21-
+        Industry standard coding practices in React 22- Optimizing code for
+        performance is crucial for a smooth user experience and system design
+        interviews. 23- Encouraging viewers to like, subscribe and engage with
+        the channel for motivation and appreciation 24- Styling is crucial for
+        UI applications in 2024 25- Emphasize accessibility, testability,
+        performance, and security in interviews.
+      </p>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>

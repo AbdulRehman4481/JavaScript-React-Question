@@ -1,0 +1,78 @@
+General styles
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #mainHeading {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50;
+    background: linear-gradient(to right, #3498db, #8e44ad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin: 1.8rem 0 0.8rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 0%;
+    background: #3498db;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  h1:hover::after {
+    width: 100%;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+  }
+  
+  
+  @media (max-width: 768px) {
+    #mainHeading {
+      font-size: 2.5rem;
+    }
+  
+    h1 {
+      font-size: 1.4rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    main {
+      padding: 20px;
+    }
+  }
+  
